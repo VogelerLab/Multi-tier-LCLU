@@ -1,15 +1,15 @@
 # Multi-tier-LCLU
 
-#Land Cover Mapping full cycle environment
+# Land Cover Mapping full cycle environment
 
 This repository contains python code and sample data developed for multi-tier land use land cover mapping project in Vogeler's Lab during 2021-2024. The code is tailored to that specific project needs, but it provides a complete walk through all the steps of remote sensing data download, processing, model building, testing, and validation. It does not need any installation but the modules required to run each script are specified in its heading.  
 
-##Files overview
+## Files overview
 
 There are four main python scripts with file names starting with numbers 1. to 4., indicating their position in the workflow. There are two additional files starting with the word 'Modules', which are general reusable modules to process Sentinel-1 and Sentinel-2 data, and are used throughout the numbered scripts. Each of four main scripts contain a variable declaration block at the start of the file, which should be carefully looked at and updated for user specific settings and file locations before running.  
 Folder SampleData contains sample files that are generated during this workflow. More detail is given below in the workflow description section.  
 
-##Workflow description
+## Workflow description
 
 The workflow starts by running `1.MakeSampleData.py`, which uses an already defined set of points in a Google Earth Engine (GEE) repository to sample a variety of remote sensing sources such as Sentinel-1, Sentinel-2, SRTM, WorldClim, etc. The results are saved in a structured binary file using python pickle format (`.p`) along with a text file (`.txt`) describing the data export parameters. A training and a validation dataset for points in South Africa are placed in the SampleData folder, named `SA_urbanTrainSet` and `SA_urbanValidationSet`. The train dataset will be used for model development in step 2, and the validation dataset is set aside for model validation in step 3.  
 
