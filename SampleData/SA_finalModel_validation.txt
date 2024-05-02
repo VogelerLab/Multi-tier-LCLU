@@ -1,0 +1,129 @@
+Validation data file: .\SampleData\SA_urbanValidationSet
+Validation labels file: .\SampleData\SA_urbanValidationSetLabels.csv
+Classification response labels: ['Barren', 'Building', 'Pavement', 'Short_vegetation', 'Tall_vegetation', 'Water', 'Wetland']
+Combine labels: None
+Picked confidences: ['High', 'high', 'Low', 'low']
+
+Validation year: 2017
+----------------------
+Accuracy score: 0.627
+
+Evaluation set confusion matrix for last iteration (columns are predictions):
+[[103  29  47  17   0   5  17]
+ [  3  94  12   8   5   1   2]
+ [  2  34  52   2   3   0   3]
+ [ 25  35  31 196  38   1  10]
+ [  0  11   4  24  72   0   7]
+ [  0   0   1   0   0 123   6]
+ [  0   1   0   0   0   7  17]]
+
+Evaluation set classification report for last iteration :
+              precision    recall  f1-score   support
+
+         0.0    0.77444   0.47248   0.58689       218
+         1.0    0.46078   0.75200   0.57143       125
+         2.0    0.35374   0.54167   0.42798        96
+         3.0    0.79352   0.58333   0.67238       336
+         4.0    0.61017   0.61017   0.61017       118
+         5.0    0.89781   0.94615   0.92135       130
+         6.0    0.27419   0.68000   0.39080        25
+
+    accuracy                        0.62691      1048
+   macro avg    0.59495   0.65511   0.59729      1048
+weighted avg    0.68948   0.62691   0.63733      1048
+
+Minimum F1 value: 0.391 at class 6.0
+
+
+Validation year: 2018
+----------------------
+Accuracy score: 0.595
+
+Evaluation set confusion matrix for last iteration (columns are predictions):
+[[ 94  32  37  20   0   8  22]
+ [  7  91  12   8   8   1   2]
+ [  1  32  49   9   3   0   4]
+ [ 36  35  25 177  52   1  10]
+ [  0  10   4  20  74   0   7]
+ [  0   0   0   0   0 114  10]
+ [  0   1   0   1   0   7  26]]
+
+Evaluation set classification report for last iteration :
+              precision    recall  f1-score   support
+
+         0.0    0.68116   0.44131   0.53561       213
+         1.0    0.45274   0.70543   0.55152       129
+         2.0    0.38583   0.50000   0.43556        98
+         3.0    0.75319   0.52679   0.61996       336
+         4.0    0.54015   0.64348   0.58730       115
+         5.0    0.87023   0.91935   0.89412       124
+         6.0    0.32099   0.74286   0.44828        35
+
+    accuracy                        0.59524      1050
+   macro avg    0.57204   0.63989   0.58176      1050
+weighted avg    0.64346   0.59524   0.60031      1050
+
+Minimum F1 value: 0.436 at class 2.0
+
+
+Validation year: 2019
+----------------------
+Accuracy score: 0.625
+
+Evaluation set confusion matrix for last iteration (columns are predictions):
+[[103  29  38  13   0   7  24]
+ [  4 102  11   6   5   2   1]
+ [  2  34  53   6   2   0   6]
+ [ 30  40  21 186  46   1  10]
+ [  0   8   5  18  68   0   9]
+ [  0   0   1   0   0 120   6]
+ [  0   1   0   1   0   6  24]]
+
+Evaluation set classification report for last iteration :
+              precision    recall  f1-score   support
+
+         0.0    0.74101   0.48131   0.58357       214
+         1.0    0.47664   0.77863   0.59130       131
+         2.0    0.41085   0.51456   0.45690       103
+         3.0    0.80870   0.55689   0.65957       334
+         4.0    0.56198   0.62963   0.59389       108
+         5.0    0.88235   0.94488   0.91255       127
+         6.0    0.30000   0.75000   0.42857        32
+
+    accuracy                        0.62536      1049
+   macro avg    0.59736   0.66513   0.60376      1049
+weighted avg    0.68235   0.62536   0.63246      1049
+
+Minimum F1 value: 0.429 at class 6.0
+
+
+Validation year: 2020
+----------------------
+Accuracy score: 0.605
+
+Evaluation set confusion matrix for last iteration (columns are predictions):
+[[ 87  35  42  17   1  10  22]
+ [  4  94  11   7   9   2   6]
+ [  0  34  52   7   2   1   7]
+ [ 27  41  11 175  52   1  12]
+ [  0   9   4  16  73   0   8]
+ [  0   0   0   0   0 133   6]
+ [  1   1   0   0   1   7  21]]
+
+Evaluation set classification report for last iteration :
+              precision    recall  f1-score   support
+
+         0.0    0.73109   0.40654   0.52252       214
+         1.0    0.43925   0.70677   0.54179       133
+         2.0    0.43333   0.50485   0.46637       103
+         3.0    0.78829   0.54859   0.64695       319
+         4.0    0.52899   0.66364   0.58871       110
+         5.0    0.86364   0.95683   0.90785       139
+         6.0    0.25610   0.67742   0.37168        31
+
+    accuracy                        0.60534      1049
+   macro avg    0.57724   0.63781   0.57798      1049
+weighted avg    0.66458   0.60534   0.61083      1049
+
+Minimum F1 value: 0.372 at class 6.0
+

@@ -1,0 +1,90 @@
+Training data file: .\SampleData\SA_urbanTrainSet
+Training labels data file: .\SampleData\SA_urbanTrainSetLabels.csv
+Train years: [2017, 2018, 2019, 2020], Test years: [2017, 2018, 2019, 2020]
+Number of trees: 100, minimum leaf size: 3
+Classification response labels: ['Barren', 'Building', 'Pavement', 'Short_vegetation', 'Tall_vegetation', 'Water', 'Wetland']
+Confidence to pick: ['High', 'high', 'Low', 'low']
+Base year class counts: [347 553 383 731 390 296 197], total: 2897
+All extracted samples class counts: [1670 2861 1978 3385 1941 1440 1070], total: 14345
+Selected features: ['VV_YearMean', 'VV_YearRange', 'B3_YearMin', 'tcb_YearMin', 'B12_YearMin', 'tcg_YearMean', 'B12_YearMean', 'ndvi_YearMin', 'mndwi_YearMax', 'nbai_YearMin', 'uci_YearMean', 'B2_YearMax', 'wi_YearMax', 'nbai_YearMax', 'B3_YearRange', 'B8_YearRange', 'tcw_YearRange', 'tca_YearRange', 'bai_YearRange', 'nbai_YearRange', 'VV_stdev_5x5', 'B3_stdev_3x3', 'B8_savg_5x64', 'B8_stdev_5x5', 'tcg_stdev_5x5', 'tcw_stdev_3x3', 'VV_prom_5x64', 'VV_corr_5x64', 'VV_shade_5x64', 'VV_imcorr2_9x64', 'VV_shade_9x64', 'B8_contrast_9x64', 'B8_corr_5x64', 'B8_imcorr2_5x64', 'B8_shade_5x64', 'B8_imcorr1_9x64', 'B8_shade_9x64', 'ntl_data', 'water_percentage', 'total_year_rain', 'bio_06', 'bio_05', 'bio_10', 'bio_04', 'bio_03', 'bio_17', 'bio_15', 'slope', 'aspect', 'soil_data', 'ECO_ID']
+Number of training iterations: 3
+score mean: 0.83, min: 0.82, max: 0.84
+
+Evaluation set confusion matrix for last iteration (columns are predictions):
+[[147  44  53   5   0   0   4]
+ [ 16 408  30  10  11   0   1]
+ [ 11  58 241  10   3   0   0]
+ [ 12  21   5 459  21   0  17]
+ [  0   7   0  23 278   0   4]
+ [  0   0   0   0   0 225  15]
+ [  0   0   0   9   2  15 125]]
+
+Evaluation set classification report for last iteration :
+              precision    recall  f1-score   support
+
+         0.0      0.790     0.581     0.670       253
+         1.0      0.758     0.857     0.805       476
+         2.0      0.733     0.746     0.739       323
+         3.0      0.890     0.858     0.873       535
+         4.0      0.883     0.891     0.887       312
+         5.0      0.938     0.938     0.938       240
+         6.0      0.753     0.828     0.789       151
+
+    accuracy                          0.822      2290
+   macro avg      0.821     0.814     0.814      2290
+weighted avg      0.824     0.822     0.821      2290
+
+Minimum F1 value: 0.670 at class 0.0
+
+Feature importances:
+     VV_YearMean: 0.083
+    uci_YearMean: 0.081
+    B12_YearMean: 0.063
+    tcg_YearMean: 0.060
+water_percentage: 0.058
+     B12_YearMin: 0.057
+   tca_YearRange: 0.051
+   mndwi_YearMax: 0.050
+      B3_YearMin: 0.047
+    ndvi_YearMin: 0.046
+     tcb_YearMin: 0.037
+    B8_savg_5x64: 0.023
+   tcg_stdev_5x5: 0.021
+   bai_YearRange: 0.020
+      wi_YearMax: 0.019
+    B3_stdev_3x3: 0.018
+      B2_YearMax: 0.017
+    nbai_YearMin: 0.015
+ B8_imcorr1_9x64: 0.014
+   tcw_YearRange: 0.014
+    B8_stdev_5x5: 0.013
+    B8_YearRange: 0.012
+    B3_YearRange: 0.011
+    nbai_YearMax: 0.010
+        ntl_data: 0.010
+  nbai_YearRange: 0.009
+   B8_shade_5x64: 0.009
+   B8_shade_9x64: 0.009
+    B8_corr_5x64: 0.008
+B8_contrast_9x64: 0.008
+   tcw_stdev_3x3: 0.007
+    VV_stdev_5x5: 0.007
+    VV_prom_5x64: 0.007
+   VV_shade_9x64: 0.006
+          bio_05: 0.006
+          bio_10: 0.006
+          bio_15: 0.006
+ B8_imcorr2_5x64: 0.006
+          bio_04: 0.005
+ VV_imcorr2_9x64: 0.005
+   VV_shade_5x64: 0.005
+    VV_corr_5x64: 0.005
+          bio_17: 0.005
+          bio_03: 0.005
+          bio_06: 0.005
+          aspect: 0.004
+    VV_YearRange: 0.004
+ total_year_rain: 0.004
+           slope: 0.004
+          ECO_ID: 0.003
+       soil_data: 0.001

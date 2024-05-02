@@ -1,0 +1,32 @@
+Generator script: makeSampleData_V6.4.py
+GEE dataset name: users/sheydari/Africa_samples/SA_urbanValidationSet
+
+Data configuration:
+-------------------
+Number of points: 1050
+Start_date = 2016-01-01, end_date = 2021-01-01
+Spatial zonal statistics bands = ['VV', 'B3', 'B8', 'tcg', 'tcw', 'tcb']
+CNN_radius = 0
+Sentinel-1 GLCM base band: VV, Quantization level: 64, Scaling min/max values: -30/30
+Sentinel-1 GLCM features : 
+{'radius': 5, 'metrics': ['_asm', '_contrast', '_corr', '_savg', '_imcorr1', '_imcorr2', '_shade', '_prom']}
+{'radius': 9, 'metrics': ['_asm', '_contrast', '_corr', '_savg', '_imcorr1', '_imcorr2', '_shade', '_prom']}
+Sentinel-2 GLCM base band: B8, Quantization level: 64, Scaling min/max values: 0/1
+Sentinel-2 GLCM features : 
+{'radius': 5, 'metrics': ['_asm', '_contrast', '_corr', '_savg', '_imcorr1', '_imcorr2', '_shade', '_prom']}
+{'radius': 9, 'metrics': ['_asm', '_contrast', '_corr', '_savg', '_imcorr1', '_imcorr2', '_shade', '_prom']}
+Minimum nigh-time light observations per month = 2
+Sentinel-2 atmospheric correction performed: False
+Maximum number of original Sentinel-2 observations: 584, first occurrence at {'pID': 146, 'year': 2018}
+Maximum number of filtered Sentinel-2 observations: 420, first occurrence at {'pID': 146, 'year': 2019}
+Maximum number of output Sentinel-2 observations: 392, first occurrence at {'pID': 479, 'year': 2019}
+Maximum number of original Sentinel-1 observations: 118, first occurrence at {'pID': 439, 'year': 2020}
+Maximum number of output Sentinel-1 observations: 118, first occurrence at {'pID': 439, 'year': 2020}
+Final output feature names:
+ - Sentinel-2 bands: ['B2', 'B3', 'B4', 'B8', 'B11', 'B12', 'tcb', 'tcg', 'tcw', 'tca', 'ndvi', 'mndwi', 'uci', 'wi', 'bai', 'nbai', 'baei', 'timestamp']
+ - Sentinel-1 bands: ['VV', 'timestamp']
+ - Annual bands: ['VV_min_3x3', 'VV_max_3x3', 'VV_stdev_3x3', 'VV_min_5x5', 'VV_max_5x5', 'VV_stdev_5x5', 'B3_min_3x3', 'B3_max_3x3', 'B3_stdev_3x3', 'B3_min_5x5', 'B3_max_5x5', 'B3_stdev_5x5', 'B8_min_3x3', 'B8_max_3x3', 'B8_stdev_3x3', 'B8_min_5x5', 'B8_max_5x5', 'B8_stdev_5x5', 'tcg_min_3x3', 'tcg_max_3x3', 'tcg_stdev_3x3', 'tcg_min_5x5', 'tcg_max_5x5', 'tcg_stdev_5x5', 'tcw_min_3x3', 'tcw_max_3x3', 'tcw_stdev_3x3', 'tcw_min_5x5', 'tcw_max_5x5', 'tcw_stdev_5x5', 'tcb_min_3x3', 'tcb_max_3x3', 'tcb_stdev_3x3', 'tcb_min_5x5', 'tcb_max_5x5', 'tcb_stdev_5x5', 'VV_asm_5x64', 'VV_contrast_5x64', 'VV_corr_5x64', 'VV_savg_5x64', 'VV_imcorr1_5x64', 'VV_imcorr2_5x64', 'VV_shade_5x64', 'VV_prom_5x64', 'VV_asm_9x64', 'VV_contrast_9x64', 'VV_corr_9x64', 'VV_savg_9x64', 'VV_imcorr1_9x64', 'VV_imcorr2_9x64', 'VV_shade_9x64', 'VV_prom_9x64', 'B8_asm_5x64', 'B8_contrast_5x64', 'B8_corr_5x64', 'B8_savg_5x64', 'B8_imcorr1_5x64', 'B8_imcorr2_5x64', 'B8_shade_5x64', 'B8_prom_5x64', 'B8_asm_9x64', 'B8_contrast_9x64', 'B8_corr_9x64', 'B8_savg_9x64', 'B8_imcorr1_9x64', 'B8_imcorr2_9x64', 'B8_shade_9x64', 'B8_prom_9x64', 'ntl_data', 'water_percentage', 'total_year_rain', 'min_year_temperature', 'max_year_temperature']
+ - Static bands: ['bio_01', 'bio_02', 'bio_03', 'bio_04', 'bio_05', 'bio_06', 'bio_07', 'bio_08', 'bio_09', 'bio_10', 'bio_11', 'bio_12', 'bio_13', 'bio_14', 'bio_15', 'bio_16', 'bio_17', 'bio_18', 'bio_19', 'elevation', 'slope', 'aspect', 'CHILI_ind', 'soil_data', 'ECO_ID']
+Total processing time: 388855+17643 sec
+Points failed to generate data:
+[[303, 'Sentinel-2 time series - year 2016'], [303, 'Sentinel-2 time series - year 2017'], [303, 'Sentinel-2 time series - year 2019'], [759, 'Sentinel-2 time series - year 2017'], [887, 'Sentinel-2 time series - year 2020'], [894, 'Sentinel-2 time series - year 2016']]
